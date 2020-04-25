@@ -1,0 +1,117 @@
+ageratum
+alyssum
+aster
+campion
+canna
+carnation
+columbine
+dahlia
+daisy
+delphinium
+gaillardia
+geranium
+goldenrod
+hollyhock
+impatiens
+larkspur
+lupin
+marigold
+nasturtium
+orchid
+pansy violet
+phlox
+poinsettia
+snapdragon
+sunflower
+sweet pea
+violet
+sweet pea
+Creeping phlox
+honeysuckle
+morning glory
+Passion flower
+Wisteria
+Kudzu
+cypress vine
+African Lily
+amaryllis
+anemone
+begonia
+crocus
+crown imperial
+cyclamen
+daffodil
+hyacinth
+iris
+lily
+narcissus
+snowdrop
+spiderwort
+tiger lily
+trillium
+tulip
+wandflower
+cannabis
+lavender
+apple
+azalea
+banksia
+buddleja/buddleia
+camellia
+cherry
+grevillea
+hakea
+hibiscus
+hydrangea
+lilac
+magnolia
+maple
+rhododendron
+pear
+potentilla
+king protea
+rose
+cootamundra wattle
+telopea
+nelumbo/lotus
+water lily
+Oak
+Apple Tree
+Aspen
+Beech
+Birch
+Blackthorn
+Cherry
+Elder Tree
+Elm
+Fir
+Holly
+Ivy
+Juniper
+Lilac
+Lime Tree
+Maple
+Pine
+Spruce
+Sycamore
+Willow
+Yew
+Acacia
+Palm Tree
+Cork Tree
+Mahogany
+Mangrove
+Prickly Pear
+Cereus
+Echinocereus
+Saguaro
+Parodia
+Water lettuce
+water-lily
+lily-pad
+lotus
+algae
+duckweed
+seaweed
+lettuce
+cabbage
