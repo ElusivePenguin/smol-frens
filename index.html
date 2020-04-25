@@ -26,35 +26,8 @@
 </head>
   
 <body>
-
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
-
-
+ 
 <script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyA8VPVggAn-72j87-LzSouHdLwQLHWXGMs",
-    authDomain: "smol-frens-6b7f6.firebaseapp.com",
-    databaseURL: "https://smol-frens-6b7f6.firebaseio.com",
-    projectId: "smol-frens-6b7f6",
-    storageBucket: "smol-frens-6b7f6.appspot.com",
-    messagingSenderId: "38242427140",
-    appId: "1:38242427140:web:372acb8a012dec5b1f7051"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
- 
-function writeNewTheme(){
- 
-  firebase.database().ref('Themes'.push()({
-  theme1: document.getElementById("theme") 
-  });
-}
-
-
- 
-
 function addRow() {
     var table = document.getElementById("table");
     var row= document.createElement("tr");
