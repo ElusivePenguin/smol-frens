@@ -1,0 +1,96 @@
+<html>
+
+<head>
+<style>
+	img {
+  	    display: block;
+  	    margin-left: auto;
+  	    margin-right: auto;
+	}
+
+	.inline-block{
+	    display: inline-block
+	}
+
+	body {
+  		background-image: url('https://i.pinimg.com/originals/6a/12/2d/6a122d9a7cfe3ef1b6ae6de61171097e.jpg');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;  
+ 	 	background-size: cover;
+	}
+
+	table, th, td {
+  		border: 1px solid black;
+	}
+</style>
+</head>
+  
+<body>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8VPVggAn-72j87-LzSouHdLwQLHWXGMs",
+    authDomain: "smol-frens-6b7f6.firebaseapp.com",
+    databaseURL: "https://smol-frens-6b7f6.firebaseio.com",
+    projectId: "smol-frens-6b7f6",
+    storageBucket: "smol-frens-6b7f6.appspot.com",
+    messagingSenderId: "38242427140",
+    appId: "1:38242427140:web:372acb8a012dec5b1f7051"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+ 
+function writeNewTheme(){
+ 
+  firebase.database().ref('Themes'.push()({
+  theme1: document.getElementById("theme") 
+  });
+}
+
+
+ 
+
+function addRow() {
+    var table = document.getElementById("table");
+    var row= document.createElement("tr");
+
+    var td1 = document.createElement("td"); 
+
+    td1.innerHTML = document.getElementById("theme").value;
+
+    row.appendChild(td1);
+
+    table.children[0].appendChild(row);
+}
+</script>
+
+<center>
+<h1> 
+<font size="80" color="orange">Smol <font size="80" color="red">Frens </font> 
+</h1>
+
+  
+<img src="https://cdn.discordapp.com/attachments/266846992871718912/703508141035356210/default.png"  style="width:20%;"> 
+<img src="https://i.kym-cdn.com/photos/images/original/001/567/318/ba7.gif" alt="PepeD">
+
+<label for="theme" color="black">Insert Theme:</label><br>
+<input type="text" id="theme" placeholder="Enter New Theme"><br><br>
+
+<button style="height:75px;width:200px" onclick = "addRow()"> <h1>Submit</h1> </button>  
+
+<table id="table" border="3" style="width:25%">
+  <tr>
+    <th>Theme</th>
+  </tr>
+</table>
+
+</center> 
+	
+</body>
+</html>
+
