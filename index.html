@@ -22,6 +22,21 @@
 	table, th, td {
   		border: 1px solid black;
 	}
+
+	.button1 {
+  		background-color: #ff9c33; /* orange */
+  		border: none;
+  		color: black;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		margin: 4px 2px;
+  		cursor: pointer;
+	}
+
+	input[type='text'] { font-size: 24px; }
 </style>
 </head>
   
@@ -33,7 +48,6 @@ function addRow() {
     var row= document.createElement("tr");
 
     var td1 = document.createElement("td"); 
-
     td1.innerHTML = document.getElementById("theme").value;
 
     row.appendChild(td1);
@@ -51,16 +65,28 @@ function addRow() {
 <img src="https://cdn.discordapp.com/attachments/266846992871718912/703508141035356210/default.png"  style="width:20%;"> 
 <img src="https://i.kym-cdn.com/photos/images/original/001/567/318/ba7.gif" alt="PepeD">
 
-<label for="theme" color="black">Insert Theme:</label><br>
-<input type="text" id="theme" placeholder="Enter New Theme"><br><br>
-
-<button style="height:75px;width:200px" onclick = "addRow()"> <h1>Submit</h1> </button>  
-
 <table id="table" border="3" style="width:25%">
-  <tr>
-    <th>Theme</th>
+  <tr bgcolor='#ff9c33'>
+    <th><font size="8">Themes</font></th>
   </tr>
+  <tr bgcolor='#ff9c33'>
+    <td><font size="5">Animal Crossing</font></td>
+  </tr>
+  <tr bgcolor='#ff9c33'>
+    <td><font size="5">One Piece</font></td>
+  </tr>
+  <tr bgcolor='#ff9c33'>
+    <td><font size="5">Pokemon</font></td>
+  </tr>
+  <tr bgcolor='#ff9c33'>
+    <td><font size="5">Colors</font></td>
+  </tr>
+  <tr bgcolor='#ff9c33'>
+    <td><font size="5">Countries</font></td>
+  </tr>
+
 </table>
+
 
 </center> 
 	
