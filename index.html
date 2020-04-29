@@ -38,6 +38,12 @@
         color:#ff9c33; 
         padding-bottom:10px; 
     } 
+    .mybutton
+    {
+	line-height: 200%;
+	margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 </head>
   
@@ -66,7 +72,13 @@ function addRow() {
 <center>
   
 <img src="https://cdn.discordapp.com/attachments/266846992871718912/703508141035356210/default.png"  style="width:20%;"> 
-<img src="https://i.kym-cdn.com/photos/images/original/001/567/318/ba7.gif" alt="PepeD">
+<img src="https://i.kym-cdn.com/photos/images/original/001/567/318/ba7.gif" alt="PepeD"><br><br>
+
+
+<button class="mybutton" style="height:75px;width:200px" onclick = "displayCount()"> <h1><font size="28" color= #ff9c33 >Click</font></h1> </button> <br>
+<p id="carrier" style = "font-family:georgia,garamond,serif; font-size:50px;font-style:bold;">
+0 
+</p>
 
 <table id="table" border="3" style="width:15%">
   <tr bgcolor='#ff9c33'>
@@ -136,5 +148,18 @@ function addRow() {
 </center> 
 	
 </body>
+
+<script>
+var count = (function(){
+
+var counter = 0;
+return function(){return counter +=1;}
+})();
+
+function displayCount(){
+document.getElementById("carrier").innerHTML = count();
+}
+
+</script>
 </html>
 
