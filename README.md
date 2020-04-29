@@ -1,1 +1,1 @@
-# smol-frens
+https://elusivepenguin.github.io/smol-frens/
