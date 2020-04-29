@@ -69,15 +69,61 @@ function addRow() {
     </marquee> 
 </div> 
 
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8VPVggAn-72j87-LzSouHdLwQLHWXGMs",
+    authDomain: "smol-frens-6b7f6.firebaseapp.com",
+    databaseURL: "https://smol-frens-6b7f6.firebaseio.com",
+    projectId: "smol-frens-6b7f6",
+    storageBucket: "smol-frens-6b7f6.appspot.com",
+    messagingSenderId: "38242427140",
+    appId: "1:38242427140:web:372acb8a012dec5b1f7051"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+function writeNum(x) {
+  firebase.database().ref("TheCount").set({
+    Counter: x
+  });
+}
+
+
+
+function readNum(){
+var myNum;
+firebase.database().ref("TheCount").on("value", function(snapshot){
+	myNum = snapshot.val().Counter;
+	var count = (function(){
+		return function(){return myNum +=1;}
+	})();
+	document.getElementById("carrier").innerHTML = count();
+    })
+	writeNum(myNum);	
+}
+
+</script>
+
+
+
+
+
 <center>
   
 <img src="https://cdn.discordapp.com/attachments/266846992871718912/703508141035356210/default.png"  style="width:20%;"> 
 <img src="https://i.kym-cdn.com/photos/images/original/001/567/318/ba7.gif" alt="PepeD"><br><br>
 
 
-<button class="mybutton" style="height:75px;width:200px" onclick = "displayCount()"> <h1><font size="28" color= #ff9c33 >Count</font></h1> </button> <br>
+<button class="mybutton" style="height:75px;width:200px" onclick = "readNum()"> <h1><font size="28" color= #ff9c33 >Click</font></h1> </button> <br>
 <p id="carrier" style = "font-family:georgia,garamond,serif; font-size:50px;font-style:bold;">
-0 
+
 </p>
 
 <table id="table" border="3" style="width:15%">
@@ -144,22 +190,8 @@ function addRow() {
 
 </table>
 
-
 </center> 
 	
 </body>
-
-<script>
-var count = (function(){
-
-var counter = 0;
-return function(){return counter +=1;}
-})();
-
-function displayCount(){
-document.getElementById("carrier").innerHTML = count();
-}
-
-</script>
 </html>
 
